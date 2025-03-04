@@ -4,6 +4,8 @@ const properties = ["title", "author", "pages", "read"];
 
 let buffer = [];
 
+const display = document.querySelector(".display");
+
 document.querySelector("form").addEventListener("submit", (event) => {
   event.preventDefault();
   properties.forEach((element) => { 
@@ -29,8 +31,6 @@ add_book_btn.addEventListener("click", () => {
   dialog.showModal();
 
 });
-
-const display = document.querySelector(".display");
 
 function Book(title, author, pages, read) {
   this.title = title;
