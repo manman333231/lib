@@ -1,0 +1,102 @@
+@font-face{
+  font-family: pixel;
+  src: url(m5x7.ttf);
+}
+
+html {
+  background-image: url(https://images6.alphacoders.com/705/thumb-1920-705836.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+* {
+  font-family: pixel;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 50vw;
+  margin: auto;
+}
+
+.container > h1 {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 3px solid black;
+  text-align: center;
+  font-size: 5em;
+  margin: 0px;
+  margin-top: 5vh;
+  padding-bottom: 8px;
+}
+
+.btn_container {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn_container > button {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 3px solid black;
+  font-size: 2em;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  height: auto;
+  width: 12vw;
+}
+
+.display {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 100%;
+  height: 50vh;
+  border: 3px solid black;
+  display: grid;
+  overflow: scroll;
+  row-gap: 2vh;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+dialog {
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 2em;
+  width: 10vw;
+}
+
+::backdrop {
+  background-image: linear-gradient(
+    90deg,
+    magenta,
+    rebeccapurple,
+    dodgerblue,
+    green
+  );
+  opacity: 0.75;
+}
+
+form > * {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+form input {
+  background: transparent;
+  backdrop-filter: blur(20px);
+  font-size: 1.5em;
+  height: 5vh;
+}
